@@ -88,7 +88,7 @@
         }
 
     </style>
-    <body style="background-color: rgb(32, 33, 36);">
+    <body style="background-color: rgb(32, 33, 36); height: 650px; position: relative;">
         <div style="position: absolute; top: 10px; right: 10px;">
             <button onclick="window.location.href='index.html'" class="search-button">Original Search</button>
         </div>
@@ -102,10 +102,10 @@
             </div>
         </div>
         <!-------------------------------------------------------------------------------------------------------->
-        <form style="padding: 22px 0 0 35px; color: #bcbec1; font-size: 13px;">
+        <form style="padding: 22px 0 0 35px; color: #bcbec1; font-size: 13px;" action="https://www.google.com/search">
             <div style="display: flex; justify-content:flex-start">
                 <div>all these words : </div>
-                <input class="input-field" style="margin-left: 95px">
+                <input class="input-field" style="margin-left: 95px" name="as_q">
                 <div style="font-size: 11px; margin: 0% 20px 0 19px; display: flex; color:#999da2">
                     Type the important words:<span style="color:white">&nbsp;tri-colour rat terrier</span>
                 </div>
@@ -113,7 +113,7 @@
             <br>
             <div style="display: flex; justify-content:flex-start">
                 <div>this exact word or phrase:</div>
-                <input class="input-field" style="margin-left: 40px">
+                <input class="input-field" style="margin-left: 40px" name="as_epq">
                 <div style="font-size: 11px; margin: 0% 20px 0 19px; display: flex; color:#999da2">
                     Put exact words in quotes:<span style="color:white">&nbsp;"rat terrier"</span>
                 </div>
@@ -121,7 +121,7 @@
             <br>
             <div style="display: flex; justify-content:flex-start">
                 <div>any of these words:</div>
-                <input class="input-field" style="margin-left: 74px">
+                <input class="input-field" style="margin-left: 74px" name="as_oq">
                 <div style="font-size: 11px; margin: 0% 20px 0 19px; display: flex; color:#999da2">
                     Type&nbsp;<span style="color:white">OR</span>&nbsp;between all the words you want:<span style="color:white">&nbsp;miniature OR standard</span>
                 </div>
@@ -129,7 +129,7 @@
             <br>
             <div style="display: flex; justify-content:flex-start">
                 <div>none of these words:</div>
-                <input class="input-field" style="margin-left: 65px">
+                <input class="input-field" style="margin-left: 65px" name="as_eq">
                 <div style="font-size: 11px; margin: 0% 20px 0 19px; color:#999da2">
                     Put a minus sign just before words that you don't want:
                     <br>
@@ -139,9 +139,9 @@
             <br>
             <div style="display: flex; justify-content:flex-start">
                 <div>numbers ranging from:</div>
-                <input class="input-field" style="margin-left: 55px; width: 255px;">
+                <input class="input-field" style="margin-left: 55px; width: 255px;" name="as_nlo">
                 <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-                <input class="input-field" style="margin-left: 0; width: 255px;">
+                <input class="input-field" style="margin-left: 0; width: 255px;" name="as_nhi">
                 <div style="font-size: 11px; margin: 0% 20px 0 19px; color:#999da2">
                     Put two full stops between the numbers and add a unit of measurement:
                     <br>
@@ -182,21 +182,23 @@
             </tbody>
          </table> -->
         
-
-        <div style="background-color: rgb(23,23,23); width: 100%; height: 100px; position: absolute; bottom: 0px; left: 0px;"></div>
-        <div style="background-color: rgb(60,64,67); width: 100%; height: 0.5px; position: absolute; bottom: 50px; left: 0px;"></div>
-        <div style="color: #999da2; font-size: 14px; position: absolute; bottom: 68px; left: 35px;">ไทย</div>
-        <div style="color: #999da2; font-size: 14px; position: absolute; bottom: 18px; margin: 0px 0px 0px 20px;">
-            <li>Nutnai</li>
-            <li>Bbeam</li>
-            <li>Khem</li>
-            <li>Dew</li>
-            <li>Kim</li>
+        <div>
+            <div style="background-color: rgb(23,23,23); width: 100%; height: 100px; position: absolute; bottom: 0px; left: 0px;"></div>
+            <div style="background-color: rgb(60,64,67); width: 100%; height: 0.5px; position: absolute; bottom: 50px; left: 0px;"></div>
+            <div style="color: #999da2; font-size: 14px; position: absolute; bottom: 68px; left: 35px;">ไทย</div>
+            <div style="color: #999da2; font-size: 14px; position: absolute; bottom: 18px; margin: 0px 0px 0px 20px;">
+                <li>Nutnai</li>
+                <li>Bbeam</li>
+                <li>Khem</li>
+                <li>Dew</li>
+                <li>Kim</li>
+            </div>
+            <div style="color: #999da2; font-size: 14px; position: absolute; bottom: 18px; margin: 0px 20px 0px 20px; right: 0px;">
+                <li>ปีศาจหมู๊</li>
+                <li>สับปะหลาดกุ้ง</li>
+                <li>บอกก็รู้ดิ</li>
+            </div>
         </div>
-        <div style="color: #999da2; font-size: 14px; position: absolute; bottom: 18px; margin: 0px 20px 0px 20px; right: 0px;">
-            <li>ปีศาจหมู๊</li>
-            <li>สับปะหลาดกุ้ง</li>
-            <li>บอกก็รู้ดิ</li>
-        </div>
+        
     </body>
 </html>
