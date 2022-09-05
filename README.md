@@ -1,6 +1,6 @@
 # Arthorn-Luangsodsai-Google
 Assignment 2 from Introduction to Information Systems
----
+
 ### Group number 5
 
 * Miss Nuttarinee Kaeopaluek<br>
