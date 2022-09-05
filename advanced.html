@@ -69,36 +69,19 @@
             box-shadow: 0 1px 1px rgba(0,0,0,0.1);
             /* color: #222; */
         }
+        .input-field {
+            border:0.5px solid #999da2; 
+            background-color: rgb(32, 33, 36); 
+            color: aliceblue; 
+            border-color: rgb(98, 102, 104);
+            width: 565px;
+            height: 25px;
+        }
+
+        /*/////////////////////////////////////////////////////////////////////////////////*/
         li {
             display: inline-block;
             margin: 0 15px;
-        }
-        
-        .allTheseWord {
-            color: white;
-            display: flex;
-            justify-content:flex-start;
-            font-size: 10px;
-        }
-        .exactword {
-            color: white;
-            display: flex;
-            justify-content:flex-start;
-        }
-        .anyword {
-            color: white;
-            display: flex;
-            justify-content:flex-start;
-        }
-        .noneword {
-            color: white;
-            display: flex;
-            justify-content:flex-start;
-        }
-        .numberRanging {
-            color: white;
-            display: flex;
-            justify-content:flex-start;
         }
         .al{
             padding: 0px 40px;
@@ -112,100 +95,60 @@
         <div style="font-size: 23px; color: white; font-weight: bold; padding: 10px;">Googie</div>
         <div style="font-size: 20px; color: #f38d70; padding: 35px;">Advanced Search</div>
         <div style="background-color: rgb(60,64,67); width: 100%; height: 0.5px;"></div>
-        <div style="font-size: 17px; color: white; padding: 35px 0 0 10px; display: flex; justify-content:space-between;">
+        <div style="font-size: 16px; color: white; padding: 35px 0 0 35px; display: flex; justify-content:space-between;">
             Find pages with...
-            <div style="margin : 0% auto;">
+            <div style="margin : 0% auto; padding-left: 120px;">
                 To do this in the search box.
             </div>
         </div>
-        <br>
-        <form>
-        <div class="allTheseWord" >
-            <div style =" border:2px ;">all these words : </div>
-            
-                <input  class =" al"type="text" style=" width: 100%; border:0.5px solid #999da2; background-color: rgb(32, 33, 36); color: aliceblue; border-color: #999da2;">
-            
-            <div style="margin: 0% 10% 0 14% ; display: flex; color:#999da2">
-                Type the important words:
-                <div style="color:white">
-                    tri-colour rat terrier
+        <!-------------------------------------------------------------------------------------------------------->
+        <form style="padding: 22px 0 0 35px; color: #bcbec1; font-size: 13px;">
+            <div style="display: flex; justify-content:flex-start">
+                <div>all these words : </div>
+                <input class="input-field" style="margin-left: 95px">
+                <div style="font-size: 11px; margin: 0% 20px 0 19px; display: flex; color:#999da2">
+                    Type the important words:<span style="color:white">&nbsp;tri-colour rat terrier</span>
                 </div>
             </div>
-        </div>
-        <br>
-        <div class="exactword" >
-            <div style =" margin-right: 2%;">this exact word or pharse <span style = "margin: 0 auto;">:</span> </div>
-            <!-- <form  style="padding : 0px 40px ; "> -->
-                <input type="text" style=" width: 150%; border:1px solid #999da2; background-color: rgb(32, 33, 36); color: aliceblue;">
-            <!-- </form> -->
-            <div style="margin: 0% 0% 0 11.5% ; display: flex; color:#999da2;">
-                Put exact words in quotes:
-            </div>
-                
-                <div style="color:white">
-                    "rat terrier"
-                </div>
-        </div>
-        <br>
-        <div class="anyword" >
-            <div style =" margin-right: 2%;">any of these words: <span style = "margin: 0 auto;">:</span> </div>
-            <!-- <form  style="padding : 0px 79px ; "> -->
-                <input type="text" style=" width: 150%; border:1px solid #999da2; background-color: rgb(32, 33, 36); color: aliceblue;">
-            <!-- </form> -->
-            <div style="margin: 0% 0% 0 8.5% ; display: flex; color:#999da2;">
-                Type&nbsp;
-            </div>
-                
-                <div style="color:white">
-                    Or&nbsp;
-                </div>
-                <div style="color: #999da2;">
-                    between all the words you want:&nbsp;
-                </div>
-                <div style="color: white;">
-                    miniature&nbsp;
-                </div>
-                <div style="color: white;">
-                    Or&nbsp;
-                </div>
-                <div style="color: white;">
-                    standard&nbsp;
-                </div>
-        </div>
-        <br>
-        <div class="noneword" >
-            <div style =" margin-right: 2%;">none of these words <span style = "margin: 0 auto;">:</span> </div>
-            <!-- <form  style="padding : 0px 72px ; "> -->
-                <input type="text" style=" width: 150%; border:1px solid #999da2; background-color: rgb(32, 33, 36); color: aliceblue;">
-            <!-- </form> -->
-            <div style="margin: 0% 0% 0 9.2% ; color:#999da2;">
-                Put a minus sign just before words that you don't want:
-                <br>
-                <div style="color:white">
-                    -rodent,&nbsp;&nbsp;&nbsp;-"Jack Russell"
+            <br>
+            <div style="display: flex; justify-content:flex-start">
+                <div>this exact word or phrase:</div>
+                <input class="input-field" style="margin-left: 40px">
+                <div style="font-size: 11px; margin: 0% 20px 0 19px; display: flex; color:#999da2">
+                    Put exact words in quotes:<span style="color:white">&nbsp;"rat terrier"</span>
                 </div>
             </div>
-                
-        </div>
-        <div class="numberRanging" >
-            <div style =" margin-right: 2%;">numbers ranging from: <span style = "margin: 0 auto;">:</span> </div>
-            <div>
-                <!-- <form  style="padding : 0px 40px ; "> -->
-                    <input type="text" style=" width: 150%; border:1px solid #999da2; background-color: rgb(32, 33, 36); color: aliceblue;">
-                <!-- </form> -->
-                &nbsp;Or&nbsp;
-                <!-- <form  style="padding : 0px 40px ; "> -->
-                    <input type="text" style=" width: 150%; border:1px solid #999da2; background-color: rgb(32, 33, 36); color: aliceblue;">
-                <!-- </form> -->
-            </div>
-            <div style="margin: 0% 0% 0 11.5% ; display: flex; color:#999da2;">
-                Put exact words in quotes:
-            </div>
-                
-                <div style="color:white">
-                    "rat terrier"
+            <br>
+            <div style="display: flex; justify-content:flex-start">
+                <div>any of these words:</div>
+                <input class="input-field" style="margin-left: 74px">
+                <div style="font-size: 11px; margin: 0% 20px 0 19px; display: flex; color:#999da2">
+                    Type&nbsp;<span style="color:white">OR</span>&nbsp;between all the words you want:<span style="color:white">&nbsp;miniature OR standard</span>
                 </div>
-        </div>
+            </div>
+            <br>
+            <div style="display: flex; justify-content:flex-start">
+                <div>none of these words:</div>
+                <input class="input-field" style="margin-left: 65px">
+                <div style="font-size: 11px; margin: 0% 20px 0 19px; color:#999da2">
+                    Put a minus sign just before words that you don't want:
+                    <br>
+                    <div style="color:white">&nbsp;-rodent, -"Jack Russell"</div>
+                </div>
+            </div>
+            <br>
+            <div style="display: flex; justify-content:flex-start">
+                <div>numbers ranging from:</div>
+                <input class="input-field" style="margin-left: 55px; width: 255px;">
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <input class="input-field" style="margin-left: 0; width: 255px;">
+                <div style="font-size: 11px; margin: 0% 20px 0 19px; color:#999da2">
+                    Put two full stops between the numbers and add a unit of measurement:
+                    <br>
+                    <div style="color:white">&nbsp;10..35 kg, £300..£500, 2010..2011</div>
+                </div>
+            </div>
+            <input type="submit" value="Advanced Search" class="search-button" style="top: 40px; background-color: rgb(67,135,245); color: white; margin-left: 700px;">
         </form>
 
 
